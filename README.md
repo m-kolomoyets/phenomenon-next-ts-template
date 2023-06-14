@@ -2,7 +2,7 @@
 
 [![Commit-lint Version](https://img.shields.io/badge/Commit_lint-^17.6.5-blue.svg)]() [![Husky Version](https://img.shields.io/badge/Husky-^8.0.0-blue.svg)]() [![PostCSS Version](https://img.shields.io/badge/PostCSS-^8.4.24-blue.svg)]() [![ESLint Version](https://img.shields.io/badge/ESLint-^8.38.0-blue.svg)]() [![Prettier Version](https://img.shields.io/badge/Prettier-^2.8.8-blue.svg)]() [![Stylelint Version](https://img.shields.io/badge/Stylelint-^15.7.0-blue.svg)]() [![T3-Env Version](https://img.shields.io/badge/t3_env-^0.4.0-blue.svg)]() [![Zod Version](https://img.shields.io/badge/Zod-^3.21.4-blue.svg)]()
 
-This project was bootstrapped with [Vite.js](https://vitejs.dev).
+This project was bootstrapped with [Create Next App](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
 ## 📦 Stack
 
