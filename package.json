@@ -11,7 +11,7 @@
     "scripts": {
         "dev": "next dev",
         "build": "next build",
-        "preview": "next start",
+        "preview": "next start -p 4173",
         "lint:eslint": "next lint",
         "lint:stylelint": "stylelint \"src/**/*.css\"",
         "lint:prettier": "prettier --check \"**/*.{ts,tsx,js,json,jsx,html,css}\"",
