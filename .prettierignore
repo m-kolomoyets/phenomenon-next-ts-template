@@ -1,0 +1,5 @@
+node_modules/
+.next/
+commitlint.config.cjs
+/src/types/abi
+/public/mockServiceWorker.js

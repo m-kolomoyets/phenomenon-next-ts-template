@@ -1,6 +1,18 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+import bundleAnalyzer from '@next/bundle-analyzer';
 
-module.exports = nextConfig
+const withBundleAnalyzer = bundleAnalyzer({
+    enabled: process.env.ANALYZE === 'true',
+    openAnalyzer: false,
+});
+
+export default withBundleAnalyzer({
+    reactStrictMode: true,
+    swcMinify: true,
+    devIndicators: {
+        buildActivity: false,
+    },
+    images: {
+        formats: ['image/avif', 'image/webp'],
+    },
+});

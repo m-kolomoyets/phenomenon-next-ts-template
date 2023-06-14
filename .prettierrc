@@ -1,0 +1,16 @@
+{
+    "printWidth": 120,
+    "proseWrap": "never",
+    "endOfLine": "lf",
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "singleQuote": true,
+    "overrides": [
+        {
+            "files": ["**/*.css", "**/*.html", "**/*.svg"],
+            "options": {
+                "singleQuote": false
+            }
+        }
+    ]
+}
