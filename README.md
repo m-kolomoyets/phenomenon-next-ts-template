@@ -18,7 +18,6 @@ This project was bootstrapped with [Create Next App](https://nextjs.org/docs/pag
 1. Install [Node.js](https://nodejs.org);
     > Require [Node.js](https://nodejs.org) version >=16.19.0
 2. Install the NPM dependencies by running `npm ci`;
-3. If you want to serve the application with base public path on your server, you should create `.env.production.local` and add the variable `VITE_BASE_PUBLIC_PATH="/foo"`.
 
 ## 🤖 Commands
 
