@@ -1,7 +1,8 @@
 import type { NextPage } from 'next';
+import NotFound from '@/modules/NotFound';
 
 const NotFoundPage: NextPage = () => {
-    return <h1>404 - Page Not Found</h1>;
+    return <NotFound />;
 };
 
 export default NotFoundPage;
