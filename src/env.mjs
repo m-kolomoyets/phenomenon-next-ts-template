@@ -21,7 +21,5 @@ export const env = createEnv({
      *
      * 💡 You'll get type errors if not all variables from `server` & `client` are included here.
      */
-    runtimeEnv: {
-        NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
-    },
+    runtimeEnv: process.env,
 });
