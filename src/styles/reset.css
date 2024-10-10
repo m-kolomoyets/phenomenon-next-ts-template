@@ -8,36 +8,116 @@
     margin: 0;
 }
 
+#root {
+    isolation: isolate;
+}
+
 html,
 body,
-[id="__next"] {
-    height: 100%;
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
 
 body {
-    line-height: 150%;
+    line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-    display: block;
-    max-width: 100%;
-}
-
-input,
-button,
-textarea,
-select {
-    font: inherit;
 }
 
 p,
@@ -50,38 +130,65 @@ h6 {
     overflow-wrap: break-word;
 }
 
-button,
-input[type="button"],
-input[type="submit"] {
-    background-color: transparent;
-    color: inherit;
-    border-width: 0;
-    padding: 0;
-    cursor: pointer;
-}
-
-button[disabled],
-input[type="button"][disabled],
-input[type="submit"][disabled],
-input[type="reset"][disabled] {
-    cursor: not-allowed;
-}
-
-input[type="checkbox"],
-input[type="radio"],
-input[type="file"] {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-}
-
-ul,
 ol,
-dd {
-    padding: 0;
+ul {
     list-style: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+img {
+    height: auto;
+    vertical-align: middle;
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+    shape-margin: 0.75rem;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+body button,
+body [type="button"],
+body [type="reset"],
+body [type="submit"] {
+    appearance: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -1,6 +1,7 @@
 {
     "printWidth": 120,
     "proseWrap": "never",
+    "arrowParens": "always",
     "endOfLine": "lf",
     "trailingComma": "es5",
     "tabWidth": 4,
@@ -12,5 +13,37 @@
                 "singleQuote": false
             }
         }
-    ]
+    ],
+    "plugins": ["@ianvs/prettier-plugin-sort-imports"],
+    "importOrder": [
+        "^react$",
+        "^next$",
+        "^next/",
+        "<BUILTIN_MODULES>",
+        "<THIRD_PARTY_MODULES>",
+        "<TYPES>^[next]",
+        "<TYPES>^[@/types]",
+        "<TYPES>",
+        "<TYPES>^[.]",
+        "^(@/context)(/.*)$",
+        "^[.](/context)(/.*)$",
+        "^(@/hooks)(/.*)$",
+        "^[.](/hooks)(/.*)$",
+        "^(@/modules)(/.*)$",
+        "^(@/utils)(/.*)$",
+        "^[.](/utils)(/.*)$",
+        "^@/constants$",
+        "^[.]/constants$",
+        "^(@/components/layout)(/.*)$",
+        "^(@/components)(/.*)$",
+        "^[.](/components)(/.*)$",
+        "^(@/ui)(/.*)$",
+        "(./App)",
+        "^(@/icons)(/.*)$",
+        "^[.](/.*)(routeTree.gen)$",
+        "^(@/styles)(/.*).css$",
+        "^[.](/.*).css$"
+    ],
+    "importOrderParserPlugins": ["typescript", "jsx", "decorators-legacy"],
+    "importOrderTypeScriptVersion": "5.0.0"
 }

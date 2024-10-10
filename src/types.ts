@@ -1,28 +1,15 @@
-export type ObjValues<T> = T[keyof T];
-
-export type WithClassName<T> = T & {
+export type WithClassName<TProps = unknown> = TProps & {
     /**
-        Extendable classnames of component
-    */
+     * Additional class name to pass from parent component
+     */
     className?: string;
 };
 
-export type WithChildren<T> = T & {
+export type WithChildren<TProps = unknown> = TProps & {
     /**
-        The content of the component.
-    */
+     * COmmon children prop
+     */
     children?: React.ReactNode;
 };
 
-export type FCProps<T> = WithClassName<WithChildren<T>>;
-
-export type ObjectOfStringsType = {
-    [key: string]: string;
-};
-
-export type RequestWithSignal<T> = T & {
-    /**
-        The signal to cancel the request.
-     */
-    signal?: AbortSignal;
-};
+export type FCProps<TProps = unknown> = WithClassName<WithChildren<TProps>>;
