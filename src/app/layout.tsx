@@ -1,6 +1,6 @@
 import localFont from 'next/font/local';
-import type { WithChildren } from '@/types';
 import type { Metadata } from 'next';
+import type { WithChildren } from '@/types';
 import '@/styles/index.css';
 
 const syneSans = localFont({
