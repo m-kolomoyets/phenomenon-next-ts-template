@@ -2,7 +2,7 @@
 
 import { memo, useCallback, useState } from 'react';
 import clsx from 'clsx';
-import s from './Counter.module.css';
+import s from './styles.module.css';
 
 const Counter: React.FC = () => {
     const [count, setCount] = useState(0);
