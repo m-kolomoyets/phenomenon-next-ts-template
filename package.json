@@ -3,7 +3,7 @@
     "version": "0.2.4",
     "private": true,
     "scripts": {
-        "dev": "next dev",
+        "dev": "next dev --turbopack",
         "build": "next build",
         "start": "next start",
         "lint:stylelint": "stylelint --cache -q \"**/*.css\"",
@@ -13,24 +13,31 @@
         "prepare": "husky"
     },
     "dependencies": {
+        "@t3-oss/env-nextjs": "^0.12.0",
+        "@tanstack/react-query": "^5.66.0",
+        "axios": "^1.7.9",
         "clsx": "^2.1.1",
-        "next": "14.2.13",
-        "react": "^18",
-        "react-dom": "^18"
+        "next": "15.1.6",
+        "react": "19.0.0",
+        "react-dom": "19.0.0",
+        "zod": "^3.24.1"
     },
     "devDependencies": {
         "@commitlint/cli": "^19.5.0",
         "@commitlint/config-conventional": "^19.5.0",
+        "@eslint/eslintrc": "^3.2.0",
+        "@eslint/js": "^9.19.0",
         "@ianvs/prettier-plugin-sort-imports": "^4.3.1",
-        "@svgr/webpack": "^8.1.0",
+        "@tanstack/eslint-plugin-query": "^5.66.0",
+        "@tanstack/react-query-devtools": "^5.66.0",
         "@types/node": "^20",
-        "@types/react": "^18",
-        "@types/react-dom": "^18",
+        "@types/react": "19.0.8",
+        "@types/react-dom": "19.0.3",
         "@typescript-eslint/eslint-plugin": "^8.6.0",
         "@typescript-eslint/parser": "^8.6.0",
         "autoprefixer": "^10.4.20",
         "eslint": "^8",
-        "eslint-config-next": "14.2.13",
+        "eslint-config-next": "15.1.6",
         "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-prettier": "^5.2.1",
         "eslint-plugin-react": "^7.36.1",
@@ -41,5 +48,9 @@
         "stylelint": "^16.9.0",
         "stylelint-config-standard": "^36.0.1",
         "typescript": "^5"
+    },
+    "overrides": {
+        "@types/react": "19.0.8",
+        "@types/react-dom": "19.0.3"
     }
 }

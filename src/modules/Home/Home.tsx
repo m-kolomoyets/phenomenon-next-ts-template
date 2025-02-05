@@ -3,8 +3,8 @@
 import { memo } from 'react';
 import clsx from 'clsx';
 import { CURRENT_YEAR } from './constants';
+import PhenomenonMarkIcon from '@/ui/icons/PhenomenonMarkIcon';
 import Counter from './components/Counter';
-import PhenomenonMarkIcon from '@/icons/phenomenon-mark.svg';
 import s from './Home.module.css';
 
 const Home: React.FC = () => {
