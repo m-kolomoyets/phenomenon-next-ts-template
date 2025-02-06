@@ -14,7 +14,7 @@ export const makeQueryClient = () => {
                 retry: false,
             },
             dehydrate: {
-                shouldDehydrateQuery: (query) => {
+                shouldDehydrateQuery(query) {
                     return defaultShouldDehydrateQuery(query) || query.state.status === 'pending';
                 },
             },
