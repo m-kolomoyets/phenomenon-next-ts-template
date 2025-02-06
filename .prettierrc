@@ -46,6 +46,7 @@
         "^(.)(/.*)(/utils)(/.*)$",
         "^(./utils)(/.*)$",
         "^(@/api)(/.*)$",
+        "^(@/tanstackQuery)(/.*)$",
         "^@/constants$",
         "^(..)(/.*)(constants)$",
         "^(.)(/.*)(/constants)$",

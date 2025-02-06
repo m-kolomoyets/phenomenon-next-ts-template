@@ -1,5 +1,6 @@
 import localFont from 'next/font/local';
 import type { Metadata } from 'next';
+import QueryClientProvider from '@/context/QueryClientContext';
 import '@/styles/index.css';
 
 const syneSans = localFont({
@@ -15,7 +16,9 @@ export const metadata: Metadata = {
 const RootLayout: React.FC<React.PropsWithChildren<unknown>> = ({ children }) => {
     return (
         <html lang="en">
-            <body className={`${syneSans.className} antialiased`}>{children}</body>
+            <body className={`${syneSans.className} antialiased`}>
+                <QueryClientProvider>{children}</QueryClientProvider>
+            </body>
         </html>
     );
 };
