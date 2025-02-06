@@ -1,15 +1,10 @@
-export type WithClassName<TProps = unknown> = TProps & {
+export type ObjValues<T> = T[keyof T];
+
+export type WithClassName<T> = T & {
     /**
-     * Additional class name to pass from parent component
-     */
+        Extendable classnames of component
+    */
     className?: string;
 };
 
-export type WithChildren<TProps = unknown> = TProps & {
-    /**
-     * COmmon children prop
-     */
-    children?: React.ReactNode;
-};
-
-export type FCProps<TProps = unknown> = WithClassName<WithChildren<TProps>>;
+export type SetStateValue<T> = React.Dispatch<React.SetStateAction<T>>;

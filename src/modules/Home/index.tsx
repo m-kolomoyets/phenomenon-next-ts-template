@@ -3,9 +3,9 @@
 import { memo } from 'react';
 import clsx from 'clsx';
 import { CURRENT_YEAR } from './constants';
+import PhenomenonMarkIcon from '@/ui/icons/PhenomenonMarkIcon';
 import Counter from './components/Counter';
-import PhenomenonMarkIcon from '@/icons/phenomenon-mark.svg';
-import s from './Home.module.css';
+import s from './styles.module.css';
 
 const Home: React.FC = () => {
     return (
@@ -20,7 +20,7 @@ const Home: React.FC = () => {
                 <section className={s.content}>
                     <Counter />
                     <p className={s.description}>
-                        Start editing <code>src/modules/Home/Home.tsx</code> to start a project
+                        Start editing <code>src/modules/Home/index.tsx</code> to start a project
                     </p>
                 </section>
             </div>
