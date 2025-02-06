@@ -16,8 +16,9 @@
     ],
     "plugins": ["@ianvs/prettier-plugin-sort-imports"],
     "importOrder": [
-        "^next$",
         "^react$",
+        "^next$",
+        "^next/",
         "<BUILTIN_MODULES>",
         "<THIRD_PARTY_MODULES>",
         "<TYPES>^[next]",
